@@ -1,0 +1,115 @@
+/* ================================
+   MENU SECTION
+================================ */
+.menu-section {
+  padding: 40px 16px;
+}
+
+/* ================================
+   MENU TITLE
+================================ */
+.menu-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #6b3e2e; /* coffee brown */
+}
+
+/* ================================
+   CATEGORY GRID (HORIZONTAL)
+================================ */
+.category-grid {
+  display: flex;
+  gap: 24px;
+
+  justify-content: center;   /* 👈 CENTER */
+  align-items: center;
+
+  overflow-x: auto;
+  padding: 10px 0 20px;
+
+  scroll-behavior: smooth;
+
+  /* hide scrollbar */
+  scrollbar-width: none;
+}
+
+.category-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================================
+   CATEGORY CARD (CREAMISH GREEN – NO BLUR)
+================================ */
+.category-card {
+  width: 160px;          /* ⬅ reduced from 220 */
+  padding: 18px;         /* ⬅ reduced from 26 */
+  border-radius: 20px;
+  flex: 0 0 auto;
+
+  background: rgba(55, 96, 38, 0.35);
+
+  border: 1px solid rgba(247, 255, 239, 0.45);
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.18),
+    inset 0 0 0.5px rgba(247, 255, 239, 0.4);
+
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* ================================
+   HOVER EFFECT
+================================ */
+.category-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  border-color: #96cbad;
+  box-shadow:
+    0 12px 36px rgba(55, 96, 38, 0.55),
+    inset 0 0 1px rgba(247, 255, 239, 0.6);
+}
+
+/* ================================
+   CATEGORY IMAGE
+================================ */
+.category-card img {
+  width: 90px;      /* ⬅ reduced */
+  height: 90px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+/* ================================
+   CATEGORY TITLE
+================================ */
+.category-card h3 {
+  font-size: 18px;   /* ⬅ reduced */
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f7ffef;
+}
+
+.category-card p {
+  font-size: 12px;   /* ⬅ reduced */
+  color: #f7ffef;
+  opacity: 0.85;
+}
+
+
+.active-card {
+  transform: scale(1.08);
+  border-color: #f7ffef;
+  box-shadow: 0 14px 40px rgba(55, 96, 38, 0.6);
+}
+
+.inactive-card {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+
