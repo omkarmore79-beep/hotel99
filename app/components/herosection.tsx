@@ -12,7 +12,7 @@ export default function ArchVideo() {
     >
       {/* MASKED VIDEO ONLY */}
       <div
-        className="relative mt-53 w-[240px] h-[445px]"
+        className="relative mt-60 w-[267px] h-[482px]"
         style={{
           WebkitMaskImage: "url('/archmask.svg')",
           WebkitMaskRepeat: "no-repeat",
