@@ -7,7 +7,7 @@ import { categories } from "../data/categories";
 import type { Category } from "../data/categories";
 
 import MenuCategoryBar from "../components/MenuCategoryBar";
-import DishList from "../components/dishlist";
+import DishList from "../components/DishList";
 
 export default function MenuClient() {
   const router = useRouter();
